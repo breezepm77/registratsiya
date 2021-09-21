@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registratsiya</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <form class="form-container" onsubmit="return validate()">
+        <p id="error"></p>
+        <h3>Login</h3>
+        <div class="form-grp">
+            <label for="user">Username</label><br>
+            <input id="user" type="text" name="username" placeholder="Username">
+            <i class="fa fa-times u_times"></i>
+            <i class="fa fa-check u_check"></i>
+        </div>
+    
+        <div class="form-grp">
+            <label for="pass">Password</label><br>
+            <input id="pass" type="password" name="Password" placeholder="Password">
+            <i class="fa fa-times p_times"></i>
+            <i class="fa fa-check p_check"></i>
+        </div><br>
+    
+        <div class="form-grp">
+            <input id="btn" type="submit" name="login-btn" value="Login">
+        </div>
+
+    </form>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

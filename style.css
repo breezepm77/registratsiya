@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,black,rgb(236, 235, 235));
+}
+.form-container{
+    background: linear-gradient(to right,gold,orange);
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0px 3px 15px 10px orange;
+    margin-top: 200px;
+}
+.form-container h3 {
+    text-align: center;
+    padding: 8px;
+    font-size: 30px;
+    color: #fff;
+}
+input[type = text], input[type = password] {
+    padding: 8px;
+    width: 90%;
+    margin-left: 15px;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(to right,lime,blue);
+}
+input[type = password]::placeholder{
+    color: #fff;
+    text-align: center;
+}
+input[type = text]::placeholder{
+    text-align: center;
+    color: #fff;
+}
+label{
+    color: #fff;
+    margin-left: 120px;
+}
+#btn{
+    margin-left: 90px;
+    width: 120px;
+    height: 35px;
+    background: linear-gradient(to right,yellow,lime);
+    border: none;
+    border-radius: 5px;
+    margin-top: -12px;
+    color: #fff;
+    cursor: pointer;
+}
+.form-grp{
+    padding: 8px;
+    position: relative;
+}
+input[type = text]:focus, input[type = password]:focus{
+    outline: 0;
+    background: linear-gradient(to right,lime,yellow);
+}
+.form-grp .fa {
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    display: none;
+}
+.fa-times{
+    color: red;
+}
+.fa-check{
+    color: lime;
+}
+#error{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
